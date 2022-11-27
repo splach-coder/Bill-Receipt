@@ -1,7 +1,7 @@
 # Bill Project
 
 > an automatic bill that gives the exact money for each person in the table
-> Live demo [_here_](https://github.com/splach-coder/Bill-Receipt.git).
+> Live demo  [_here_](https://github.com/splach-coder/Bill-Receipt.git).
 
 ## Table of Contents
 
