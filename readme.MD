@@ -17,7 +17,7 @@
 ## General Information
 
 - an automatic bill that gives the exact money for each person in the table .
-- What problem does it (intend to) solve? devides the money for each person in the table and the tip either.
+- The app devides the money for each person in the table and the tip either.
 
 ## Technologies Used
 
