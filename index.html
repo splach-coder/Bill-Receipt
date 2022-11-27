@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- link the jquery  -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="bill">
+        <h5>Bill</h5>
+        <div class="price">
+          $ <input type="number" value="100" id="price" />
+        </div>
+      </div>
+      <div class="tip">
+        <h5>Tip</h5>
+        <div class="price" >$ <span id="tip">8</span></div>
+      </div>
+      <hr />
+      <div class="total">
+        <h5>Total amount</h5>
+        <div class="price" id="total_price">$ 108</div>
+      </div>
+      <div class="tip-scroll">
+        <div class="upper">
+          <h5>Tip %</h5>
+          <div class="value" ><span id="tip_value"></span> %</div>
+        </div>
+        <div class="lower">
+          <input type="range" id="tip-amount" min="0" max="100" />
+        </div>
+      </div>
+      <div class="people-scroll">
+        <div class="upper">
+          <h5>No. Of People %</h5>
+          <div class="value" id="persons">6</div>
+        </div>
+        <div class="lower">
+          <input type="range" id="people-amount" min="0" max="10" />
+        </div>
+      </div>
+      <div class="total-amount">
+        <div class="tip-each">
+          <h5>Tip Per Person</h5>
+          <div class="price">$ <span id="each-tip">108</span></div>
+        </div>
+        <div class="total-each">
+          <h5>Total Per Person</h5>
+          <div class="price">$ <span id="each-person">108</span></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
