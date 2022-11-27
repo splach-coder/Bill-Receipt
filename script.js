@@ -3,6 +3,8 @@ $(document).ready(function () {
     // numbers of persons
     var numberPersons = 0;
 
+    init();
+
     //on change the value of the price
     $("#price").change(function () {
         $("#total_price").text('$    ' + calculateTotal());
@@ -39,11 +41,23 @@ $(document).ready(function () {
         return result;
     }
 
-    function total(){
+    function total() {
         const res = calculateTotal() / numberPersons;
         const res_tip = parseFloat($("#tip").text()) / numberPersons;
 
         $("#each-tip").text(res_tip);
         $("#each-person").text(res);
+    }
+
+    function init() {
+        $("#each-tip").text(0);
+        $("#each-person").text(0);
+        $("#price").val(0);
+        $("#tip-amount").val(0);
+        $("#tip").text(0);
+        $("#tip_value").text(0);
+        $("#persons").text(0);
+        $("#people-amount").val(0);
+        $("#total_price").text(0);
     }
 })
